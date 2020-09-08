@@ -39,3 +39,8 @@ SHOP_PASSWORD=PLEASE_CHANGE
 
 2. For each order, Klaviyo wants two event types: “Placed Order” and “Ordered Product”.
     - Pulled data in from Shopify, then iterated over each order once for “Placed Order” and again for “Ordered Product” over each order and formatted the data into their respective payloads
+
+
+##### Notes:
+##### Please ignore files `main.js`, `index.js`, `yarn.js` & `.yarnrc. 
+##### These are components of a transcompiler to allow me to use Javascript (ES2019/ES2020), I will try to provide another implementation in ES6 too.

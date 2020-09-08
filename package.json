@@ -1,0 +1,19 @@
+{
+  "name": "klaviyo-shopify-integration",
+  "scripts": {
+    "start": "node shopify.js"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "module": "main.js",
+  "repository": "https://github.com/Spongenuity/klaviyo-shopify-integration.git",
+  "author": "samer.dabra@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "node-fetch": "^2.6.1",
+    "shopify-api-node": "^3.4.4",
+    "unix-timestamp": "^0.2.0"
+  }
+}
