@@ -22,7 +22,7 @@ const orderedProduct = (data) => {
         SKU: item.sku,
         ProductName: item.name,
         Quantity: item.quantity,
-        ProductURL: `${process.env.KLAVIYO_API_KEY}.myshopify.com${item.url}` ,
+        ProductURL: (item.url !== undefined) ? `${process.env.KLAVIYO_API_KEY}.myshopify.com${item.url}` : '' ,
         ProductCategories: item.properties,
       },
       time: timestamp.fromDate(data.processed_at),
