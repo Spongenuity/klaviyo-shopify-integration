@@ -8,7 +8,7 @@ Node.js and Javascript (ES2019/ES2020)
 * **Node** Version used is : `v13.2.0`
 * **Yarn** Version used is : `1.19.2`
 
-##### Setup:
+###### Setup:
 * `git clone https://github.com/Spongenuity/klaviyo-shopify-integration.git`
 * `cd klaviyo-shopify-integration`
 * `yarn`
@@ -39,6 +39,11 @@ SHOP_PASSWORD=PLEASE_CHANGE
 
 2. For each order, Klaviyo wants two event types: “Placed Order” and “Ordered Product”.
     - Pulled data in from Shopify, then iterated over each order once for “Placed Order” and again for “Ordered Product” over each order and formatted the data into their respective payloads
+
+
+#### Improvements/Changes
+* Tests and logs would be necessary if this was to scale up
+
 
 
 ##### Notes:
