@@ -29,9 +29,9 @@ const getShopifyOrders = (created_at_min, created_at_max, financial_status) => {
 const rangeStart = dateFormatter(new Date("01 January 2016 00:00:00 UTC")); // I opted to allow input of the date in an easy to understand format. Please see ./helper_functions for a more in depth explaination
 const rangeEnd = dateFormatter(new Date("31 December 2016 23:59:59 UTC"));
 
-const orderedProductsFromShopfiy = getShopifyOrders(rangeStart, rangeEnd, 'paid')
+const orderedProductsFromShopfiy = getShopifyOrders(rangeStart, rangeEnd, 'paid') //finds orders within the range input above
 .then((items) => {
-    items.forEach((item) => {
+    items.forEach((item) => { //Sends orders to Klaviyo
         orderedProduct(item);
         placedOrder(item);
     })

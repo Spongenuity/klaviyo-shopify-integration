@@ -5,6 +5,10 @@ import sendPayloadToKlaviyo from '../utils/send_to_klaviyo';
 import { billingDetails, shippingDetails } from '../utils/personal_details';
 import { addressCheck, itemURL } from '../utils/helper_functions';
 
+/*
+Once the data has been pulled in from Shopify, I iterated over each order for “Ordered Product” over each order and formatted the data into its respective payload
+*/ 
+
 const placedOrder = (data) => {
   const payload = {
     token: process.env.KLAVIYO_API_KEY,
