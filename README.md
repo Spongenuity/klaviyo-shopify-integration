@@ -1,1 +1,1 @@
-# klaviyo-shopify-integration
+# Klaviyo Shopify Integration
